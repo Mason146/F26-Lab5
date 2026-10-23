@@ -22,9 +22,9 @@ def read_file(filename):
 # Both except block should display the appropriate error messages
 #Add a finally block which closes the file, if the file was opened successfully.
     file = None
+    numbers = []
     try:
         file = open(filename, "r")
-        numbers = []
         for line in file:
             numbers.append(int(line.strip()))
         return numbers
